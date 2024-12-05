@@ -23,3 +23,4 @@ MySQL 설치:
 helm install mysql bitnami/mysql --set auth.rootPassword=password --set primary.persistence.size=1Gi
 mysql -h mysql -u root -p
 docker build -t <도커허브주소>/api-server:<태그>
+docker push <도커허브주소>/api-server:<태그>
