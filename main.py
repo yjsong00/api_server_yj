@@ -19,3 +19,9 @@ async def get_items_endpoint():
     db = get_db()
     return get_items(db)
 
+# Health check 엔드포인트 추가
+@app.get("/health")
+async def health_check():
+    # 상태 확인을 위한 간단한 응답 반환
+    return {"status": "OK"}
+
